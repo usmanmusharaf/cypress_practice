@@ -1,3 +1,4 @@
 {
-    "baseUrl": "https://insurify.com"
+    "baseUrl": "https://insurify.com",
+    "pageLoadTimeout": 100000
 }

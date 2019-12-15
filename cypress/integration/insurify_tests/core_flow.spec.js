@@ -11,19 +11,18 @@ describe('Complete happy flow', () => {
     const helper = new HelperFuncs
     const carDetail = new CarDetail
 
+    beforeEach(function () {
+        cy.visit('/')
+        helper.requestAssertion('POST', '/api/users/user_pageview/')
+    })
+
     // core flow of application
     it('Fill in user preferences', () => {
-        cy.visit('/', {
-            onLoad: () => {
-                console.log('Page Loading Complete')
-            }
-        }).then(() => {
-            cy.title().should('include', 'Insurify®')
-            homepage.enterZipcode('76365')
-            helper.requestAssertion('PATCH', '/api/applicants/application/?product_type=auto') // asserting application patch request
-            carMake.selectCar('2014', 'Honda', 'Civic', 'Hybrid')
-            carDetail.enterCarDetails('Commute to school', '10', 'Paid in full', 'No Coverage')
-        })
+        cy.title().should('include', 'Insurify®')
+        homepage.enterZipcode('76365')
+        helper.requestAssertion('PATCH', '/api/applicants/application/?product_type=auto') // asserting application patch request
+        carMake.selectCar('2014', 'Honda', 'Civic', 'Hybrid')
+        carDetail.enterCarDetails('Commute to school', '10', 'Paid in full', 'No Coverage')
 
     })
 

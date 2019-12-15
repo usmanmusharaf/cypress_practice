@@ -26,5 +26,6 @@ export class CarMake {
         cy.get('.tag-label').should('be.visible')
         return cy.get('.tt-dataset-car_trim div').contains(car_trim)
     }
+
 }
 

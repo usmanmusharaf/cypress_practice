@@ -13,7 +13,7 @@ describe('Complete happy flow', () => {
 
     beforeEach(function () {
         cy.visit('/')
-        helper.requestAssertion('POST', '/api/users/user_pageview/')
+        helper.requestAssertion('POST', '/api/users/static_user_pageview/')
     })
 
     // core flow of application

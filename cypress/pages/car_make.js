@@ -1,10 +1,16 @@
+import { HelperFuncs } from "../support/helper_funcs"
+
+const helper = new HelperFuncs
 
 export class CarMake {
+
     selectCar(year, make, model, trim) {
+        helper.pageLocationCheck('#/cars/car_make/1')
         this.getCarYear(year).click()
         this.getCarMake(make).click()
         this.getCarModel(model).click()
         this.getCarTrim(trim).click()
+
     }
     // get car_year with string param
     getCarYear(car_year) {

@@ -1,6 +1,11 @@
+import { HelperFuncs } from "../support/helper_funcs"
+const helper = new HelperFuncs
+
 export class CarDetail {
 
     enterCarDetails(purpose, distance, status, deductible) {
+
+        helper.pageLocationCheck('#/cars/car_details/1')
         this.getCarPurpose(purpose).click()
         this.getDistanceEachWay(distance).click()
         this.getCarPaymentStatus(status).click()

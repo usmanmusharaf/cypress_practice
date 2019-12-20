@@ -1,6 +1,5 @@
 import { HomePage } from "../../pages/homepage"
 import { CarMake } from "../../pages/car_make"
-import { HelperFuncs } from "../../support/helper_funcs"
 import { CarDetail } from "../../pages/car_detail"
 import { DriverInfo } from "../../pages/driver_info"
 import { Discounts } from "../../pages/discounts"

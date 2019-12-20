@@ -1,4 +1,5 @@
 {
-    "baseUrl": "https://insurify.com",
-    "pageLoadTimeout": 100000
+  "baseUrl": "https://insurify.com",
+  "pageLoadTimeout": 100000,
+  "projectId": "w4afgs"
 }

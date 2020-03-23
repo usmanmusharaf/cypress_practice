@@ -1,5 +1,6 @@
 {
-  "baseUrl": "https://insurify.com",
-  "pageLoadTimeout": 100000,
-  "projectId": "w4afgs"
+	"baseUrl": "https://test.insurify.com",
+	"pageLoadTimeout": 100000,
+	"projectId": "w4afgs",
+	"firefoxGcInterval": 2
 }
